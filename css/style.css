@@ -1,0 +1,23 @@
+body {
+    padding-top: 50px;
+  }
+  .em-text
+  {
+      color:#3498eb!important;
+  }
+  .jumbotron{
+      color: #000;
+  }
+  .form{
+      border-style: solid;
+      border-color: black;
+      padding-right: 25px;
+      padding-top: 25px;
+      padding-bottom: 25px;
+  }
+  .index{
+    background: url(../images/close-up-of-wooden-plank-326311.jpg)no-repeat top center!important;
+    height: 598px;
+    color: #fff;
+
+  }
