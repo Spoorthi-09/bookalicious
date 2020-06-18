@@ -1,14 +1,11 @@
-
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="canonical" href="https://getbootstrap.com/docs/3.4/examples/starter-template/">
 
-    <title>Bookalicious</title>
-
+    <title>user_profile</title>
     <!-- Bootstrap core CSS -->
     <link href="css/bootstrap.min.css" rel="stylesheet">
 
@@ -17,13 +14,31 @@
 
     <!-- Custom styles for this template -->
     <link href="css/style.css" rel="stylesheet">
+    <style>
+    .block {
+  display: block;
+  width: 100%;
+  border: none;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 28px;
+  font-size: 16px;
+  cursor: pointer;
+  text-align: center;
+}
 
+.block:hover {
+  background-color: #ddd;
+  color: black;
+}
+</style>
     
-  </head>
+    
+    
 
-  <body>
-
-    <nav class="navbar navbar-default navbar-fixed-top">
+</head>
+<body>
+<nav class="navbar navbar-default navbar-fixed-top">
       <div class="container">
         <div class="navbar-header">
           <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
@@ -61,8 +76,14 @@
             </form>
             <!--/.nav to right-->
             <ul class = "nav navbar-nav navbar-right">
-              <li><a class = "glyphicon glyphicon-shopping-cart" href = "#"></a></li>
-              <li><a class = "glyphicon glyphicon-user" href = "#"></a></li>
+              <li><a class = "glyphicon glyphicon-shopping-cart" title = "cart" href = "#">
+              <span class = "badge bac"></span></a></li><!--badge-->
+              <li><a class = "glyphicon glyphicon-user" href = "#">
+              <ul class = "dropdown-menu">
+              </a></li>
+              
+
+              
             </ul>
             
 
@@ -70,19 +91,36 @@
         </div><!--/.nav-collapse -->
       </div>
     </nav>
+<div class = "container">
+  <div class = "col-md-4">
+    <div class="panel panel-default">
+    <div class="panel-heading">Categories</div>
+    <div class="panel-body">
+      <ul class = "list-group">
+        <li class = "list-group-item"><a href = "#">Profile</a><li>
+        <li class = "list-group-item"><a href = "#">Orders</a><li>
+        <li class = "list-group-item"><a href = "#">Cart</a><li>
+        <li class = "list-group-item"><a href = "#">Help</a><li>
+        <li class = "list-group-item"><a href = "#">About</a><li>
+      </ul>
+    </div>
+    </div>
+  </div>
+  <div class = "col-md-8">
+    <div class="panel panel-default">
+    <div class="panel-heading">
+        <h3 class="panel-title"><center>What do you want to do?</center></h3>
+    </div>
+        <br><br>
+        <button class = "block">Sell Books</button>
+        <br><br>
+        <button class = "block">Buy Books</button>
+    
 
-    <div class="jumbotron index">
-      <div class="container">
-        <h1 style="color: beige;">Buy and <span style = "color:lightblue">Sell</span> your books here!!</h1>
-      </div>
+    </div>
+  </div>
+</div>
 
-    </div><!-- /.container -->
-
-
-    <!-- Bootstrap core JavaScript
-    ================================================== -->
-    <script src="https://code.jquery.com/jquery-1.12.4.min.js" integrity="sha384-nvAa0+6Qg9clwYCGGPpDQLVpLNn0fRaROjHqs13t4Ggj3Ez50XnGQqc/r8MhnRDZ" crossorigin="anonymous"></script>
-    <script>window.jQuery || document.write('<script src="js/vendor/jquery.min.js"><\/script>')</script>
-    <script src="js/bootstrap.js"></script>
-  </body>
+    
+</body>
 </html>

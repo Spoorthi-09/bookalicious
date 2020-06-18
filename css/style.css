@@ -14,6 +14,7 @@ body {
       padding-right: 25px;
       padding-top: 25px;
       padding-bottom: 25px;
+      border-radius: 4px;
   }
   .index{
     background: url(../images/close-up-of-wooden-plank-326311.jpg)no-repeat top center!important;
