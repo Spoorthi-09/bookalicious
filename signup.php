@@ -1,3 +1,4 @@
+
 <?php
 
 
@@ -28,11 +29,11 @@ $email = $_POST["email"];
 
    if(isset($_POST["email"])){
 
-         $sql ="SELECT id FROM `user` WHERE email='$email'";//query to check if email exits
+         $sql ="SELECT id FROM user WHERE email='$email'";//query to check if email exits
 
         $result = mysqli_query($link,$sql);
 
-        if(mysqli_num_rows($result)>0){ //
+        if(mysqli_num_rows($result) > 0){ //
 
             $emai_err = "Email already exist";
 
@@ -95,8 +96,9 @@ $email = $_POST["email"];
                     if(mysqli_stmt_execute($stmt)){
 
                     // Redirect to login page
+                    echo '<script>alert("Registered successfully!!")</script>'; 
 
-                        header("location: index.html");
+                        header("location: index.php");
 
                     }
 
@@ -160,13 +162,13 @@ $email = $_POST["email"];
 
 <body>
 
-    <h1 style = "text-align:center"><u>SIGNUP</u></h1>
+<h1 style="text-align:center"><u>SIGNUP</u></h1>
+
 
    
 
     <form method="POST">
-
-    <div>
+        <div>
 
     <label >Name:</label>
 
@@ -174,7 +176,7 @@ $email = $_POST["email"];
 
     <br><br>
 
-    <label >email</label>
+    <label >email:</label>
 
     <input type="email" name="email" id="" required>
 
@@ -182,7 +184,7 @@ $email = $_POST["email"];
 
     <br><br>
 
-    <label >Password</label>
+    <label >Password:</label>
 
     <input type="password" name="password" id="" required>
 
@@ -190,7 +192,7 @@ $email = $_POST["email"];
 
     <br><br>
 
-    <label for="">Confirm Password</label>
+    <label for="">Confirm Password:</label>
 
     <input type="password" name="con_pass" id="" required>
 
@@ -199,7 +201,9 @@ $email = $_POST["email"];
     <br><br>
 
     <input type="submit" value="Submit">
-    </div>
+</div>
+
+
 
     </form>
 

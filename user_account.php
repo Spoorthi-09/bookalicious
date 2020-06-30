@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -99,7 +100,7 @@
       <ul class = "list-group">
         <li class = "list-group-item"><a href = "#">Profile</a><li>
         <li class = "list-group-item"><a href = "#">Orders</a><li>
-        <li class = "list-group-item"><a href = "#">Cart</a><li>
+        <li class = "list-group-item"><a href = "cart.php">Cart</a><li>
         <li class = "list-group-item"><a href = "#">Help</a><li>
         <li class = "list-group-item"><a href = "#">About</a><li>
       </ul>
@@ -112,9 +113,9 @@
         <h3 class="panel-title"><center>What do you want to do?</center></h3>
     </div>
         <br><br>
-        <button class = "block">Sell Books</button>
+        <button class = "block"><a href = "upload_book.php">Sell Books</a></button>
         <br><br>
-        <button class = "block">Buy Books</button>
+        <button class = "block"><a href = "index.php">Buy Books</a></button>
     
 
     </div>
@@ -124,3 +125,4 @@
     
 </body>
 </html>
+

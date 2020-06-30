@@ -9,16 +9,65 @@ body {
       color: #000;
   }
   .form{
-      border-style: solid;
-      border-color: black;
-      padding-right: 25px;
-      padding-top: 25px;
-      padding-bottom: 25px;
-      border-radius: 4px;
+    background-color: cornsilk;
+    max-width: 330px;
+  widows: 30px;
+  padding: 30px;
+  
   }
   .index{
     background: url(../images/close-up-of-wooden-plank-326311.jpg)no-repeat top center!important;
     height: 598px;
     color: #fff;
 
+  }
+  .badge{
+	position: absolute;
+  top:05px;
+	padding: 3px 5px;
+	border-radius: 50%;
+	background: red;
+	color: white;
+  }
+  .image{
+    display: block;
+  margin-left: auto;
+  margin-right: auto;
+    width: 150px;
+    height: 250px;
+ 
+
+  }
+  .name{
+    text-align: center;
+    font-family:'Times New Roman';
+    font-weight: bolder;
+    font-size: larger;
+    text-align:center;
+    padding:5px;
+    background:#333;
+    color:#fff;
+  }
+  .game{
+    border: 10px;
+  }
+  .price{
+    font-family:'Times New Roman';
+    font-weight: bolder;
+    font-size: larger;
+    text-align:center;
+    padding:5px;
+    background:#fff;
+    color:#333;
+  }
+  .game-add{
+    margin:5px auto 20px auto;
+    width:100%;
+    text-align:center;
+  }
+  footer{
+    text-align: center;
+    padding: 3px;
+    background-color: DarkSalmon;
+    color: white;
   }
